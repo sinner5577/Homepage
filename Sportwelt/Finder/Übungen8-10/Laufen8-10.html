@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finder-Laufen8-10</title>
+
+    <link rel="stylesheet" href="/Finder/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script language="javascript" type="text/javascript" src="/Finder/script.js"></script>
+
+    <link rel="icon" href="/img/Icon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/Icon.ico" type="image/x-icon">
+    
+
+</head>
+<body>
+
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title"></h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body"></div>
+        </div>
+    </div>
+</div>
+
+<header>
+    <h1>Körper8-10</h1>
+    <input id="suchfeld" placeholder="Suche nach einer Sportart">
+    <img src="/img/menu-icon.png" alt="Menü" class="toggle" height="50px" width="50px">
+</header>
+
+<div id="sidebar">
+    <a href="#" onclick="Home()">Home</a>
+    <a href="#" onclick="Klasse5_7()">Klasse5-7</a>
+    <a href="#" onclick="Klasse8_10()">Klasse8-10</a>
+    <a href="#" onclick="Klasse11_13()">Klasse11-13</a>
+    <a href="#" onclick="Mitwirken()">Mitwirken</a>
+    <a href="#" onclick="Kontakt()">Kontakt</a>
+    <a href="#" onclick="Impressum()">Impressum</a>
+</div>
+  
+<div id="main" class="active">
+
+
+    <table class="uebungen-tabelle">
+        <tr>
+            <th>Übung</th>
+        </tr>
+        <tr class="uebungen-tabelle-item">
+            <td>
+                <h3>Kniebeugen (Squats)</h3>
+                <div class="uebungsbeschreibung">
+                    <p>Kniebeugen sind eine effektive Übung, um die Beinmuskulatur zu stärken. Stehe aufrecht, beuge die Knie und senke das Gesäß, als ob du dich setzen würdest. Halte den Rücken gerade und drücke dich dann wieder nach oben.</p>
+                    
+
+                </div>
+            </td>
+        
+        </tr>
+        <tr class="uebungen-tabelle-item">
+            <td>
+                <h3>Liegestütze (Push-ups)</h3>
+                <div class="uebungsbeschreibung">
+                    <p>Liegestütze sind eine großartige Übung für die Brust- und Armmuskulatur. Liege auf dem Bauch, platziere die Hände unter den Schultern und drücke dich nach oben. Halte den Körper gerade und senke dich dann kontrolliert ab.</p>
+                    <!-- Füge hier ggf. Bilder hinzu -->
+                </div>
+            </td>
+            
+        </tr>
+        <!-- Füge hier die restlichen 8 Basisübungen ein -->
+
+        <!-- 20 Extraübungen -->
+        <tr class="uebungen-tabelle-item">
+            <td>
+                <h3>Ausfallschritte (Lunges)</h3>
+                <div class="uebungsbeschreibung">
+                    <p>Ausfallschritte sind ideal, um Beinmuskulatur und Gleichgewicht zu verbessern. Mache einen großen Schritt nach vorne, senke das hintere Knie Richtung Boden und drücke dich dann zurück.</p>
+                    <!-- Füge hier ggf. Bilder hinzu -->
+                </div>
+            </td>
+        </tr>
+        <tr class="uebungen-tabelle-item">
+            <td>
+                <h3>Bauchmuskeltraining (Crunches)</h3>
+                <div class="uebungsbeschreibung">
+                    <p>Crunches stärken die Bauchmuskulatur. Liege auf dem Rücken, beuge die Knie und platziere die Hände hinter dem Kopf. Hebe den Oberkörper an und ziehe die Bauchmuskeln zusammen.</p>
+                    <!-- Füge hier ggf. Bilder hinzu -->
+                </div>
+            </td>
+           
+        </tr>
+        <tr class="uebungen-tabelle-item">
+            <td>
+                <h3>Jumping Jacks</h3>
+                <div class="uebungsbeschreibung">
+                    <p>Jumping Jacks sind eine großartige Cardio-Übung. Stehe aufrecht, springe gleichzeitig mit geöffneten Armen und Beinen nach oben und lande wieder in der Ausgangsposition.</p>
+                    <!-- Füge hier ggf. Bilder hinzu -->
+                </div>
+            </td>
+            
+        </tr>
+        <tr class="uebungen-tabelle-item">
+            <td>
+                <h3>Burpees</h3>
+                <div class="uebungsbeschreibung">
+                    <p>Burpees sind eine intensive Ganzkörperübung. Starte im Stand, mache einen Liegestütz, springe dann in die Hocke und führe einen Sprung nach oben aus.</p>
+                    <!-- Füge hier ggf. Bilder hinzu -->
+                </div>
+            </td>
+           
+        </tr>
+        <tr class="uebungen-tabelle-item">
+            <td>
+                <h3>Mountain Climbers</h3>
+                <div class="uebungsbeschreibung">
+                    <p>Mountain Climbers verbessern die Ausdauer und kräftigen den Rumpf. Gehe in die Liegestützposition und führe abwechselnd die Knie Richtung Brust.</p>
+                    <!-- Füge hier ggf. Bilder hinzu -->
+                </div>
+            </td>
+           
+        </tr>
+        <tr class="uebungen-tabelle-item">
+            <td>
+                <h3>Plank Rotation</h3>
+                <div class="uebungsbeschreibung">
+                    <p>Die Plank Rotation ist eine Fortgeschrittenen-Variante des Planks. Starte in der Plank-Position und rotiere den Oberkörper, um abwechselnd einen Arm nach oben zu strecken.</p>
+                    <!-- Füge hier ggf. Bilder hinzu -->
+                </div>
+            </td>
+            
+        </tr>
+        <tr class="uebungen-tabelle-item">
+            <td>
+                <h3>Bergsteiger</h3>
+                <div class="uebungsbeschreibung">
+                    <p>Bergsteiger verbessern die Kraft und Ausdauer der Bauchmuskulatur. Gehe in die Liegestützposition und bringe abwechselnd die Knie zur Brust.</p>
+                    <!-- Füge hier ggf. Bilder hinzu -->
+                </div>
+            </td>
+           
+        </tr>
+        <tr class="uebungen-tabelle-item">
+            <td>
+                <h3>Trizeps Dips</h3>
+                <div class="uebungsbeschreibung">
+                    <p>Trizeps Dips kräftigen die Armmuskulatur. Setze dich auf eine erhöhte Fläche, lehne die Hände nach hinten und drücke den Körper nach oben und unten.</p>
+                    <!-- Füge hier ggf. Bilder hinzu -->
+                </div>
+            </td>
+           
+        </tr>
+        <tr class="uebungen-tabelle-item">
+            <td>
+                <h3>Hampelmänner</h3>
+                <div class="uebungsbeschreibung">
+                    <p>Hampelmänner sind eine dynamische Cardio-Übung. Springe abwechselnd mit geöffneten Armen und Beinen seitlich.</p>
+                    <!-- Füge hier ggf. Bilder hinzu -->
+                </div>
+            </td>
+            
+        </tr>
+        <tr class="uebungen-tabelle-item">
+            <td>
+                <h3>Russische Twists</h3>
+                <div class="uebungsbeschreibung">
+                    <p>Russische Twists stärken die seitlichen Bauchmuskeln. Setze dich auf den Boden, neige den Oberkörper zurück und rotiere abwechselnd zu jeder Seite.</p>
+                    <!-- Füge hier ggf. Bilder hinzu -->
+                </div>
+            </td>
+            
+        </tr>
+    </table>
+
+
+    <div class="uebungs-detail">
+        <!-- Hier wird die detaillierte Beschreibung angezeigt -->
+    </div>
+</div>
+
+<!-- ... (weitere Inhalte) ... -->
+
+</body>
+</html>
+
