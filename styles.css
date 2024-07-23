@@ -1,0 +1,135 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0; /* Hintergrundfarbe geändert */
+    text-align: center;
+    margin: 20px; /* Weniger Margin für bessere Nutzung des Bildschirms */
+}
+
+h1 {
+    color: #333;
+}
+
+.countdown-container {
+    margin-bottom: 20px;
+}
+
+.countdown {
+    font-size: 36px; /* Kleinere Schriftgröße für Mobilgeräte */
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+    padding: 12px 24px; /* Größere Polsterung */
+    font-size: 16px;
+    background-color: #333; /* Hintergrundfarbe des Buttons geändert */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #333;
+}
+
+/* Media Query für größere Bildschirme */
+@media (min-width: 768px) {
+    body {
+        margin: 50px; /* Mehr Margin für größere Bildschirme */
+    }
+
+    .countdown {
+        font-size: 48px; /* Größere Schriftgröße für größere Bildschirme */
+    }
+}
+
+/* Banner-Stile */
+#banner {
+    background-color: #333; /* Hintergrundfarbe des Banners geändert */
+    color: #fff;
+    padding: 20px;
+    margin: 0; /* Kein äußerer Abstand */
+    border-radius: 0px;
+    position: absolute; /* Position auf absolut setzen */
+    left: 0; /* Position von ganz links */
+    right: 0; /* Position von ganz rechts */
+    top: 0; /* Position von ganz oben */
+    z-index: 2; /* Z-Index auf eine höhere Ebene als der des Iframes setzen */
+}
+
+#banner p {
+    margin-bottom: 10px;
+}
+
+
+
+
+/* Formular-Stile */
+#confirmInput {
+    margin-top: 10px;
+}
+
+/* Select-Stile */
+select {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none;
+    background-color: #fff; /* Hintergrundfarbe des Select-Felds geändert */
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23ccc" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+select:hover {
+    border-color: #999;
+}
+
+/* Button-Stile */
+#confirmButton {
+    padding: 12px 24px; /* Größere Polsterung */
+    font-size: 16px;
+    background-color: #333; /* Hintergrundfarbe des Buttons geändert */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    position: relative; /* Position auf relativ setzen */
+    z-index: 2; /* Z-Index auf eine höhere Ebene als der des Iframes setzen */
+}
+
+#confirmButton:hover {
+    background-color: #555; /* Hintergrundfarbe des Buttons im Hover-Zustand geändert */
+}
+
+#formContainer {
+    margin-top: 200px; /* Beispielwert für den oberen Abstand */
+    text-align: center;
+    position: relative; /* Position auf relativ setzen */
+    height: 100%;
+
+   
+}
+
+iframe {
+    width: 100%;
+    border: none;
+    position: relative; /* Position auf relativ setzen */
+    z-index: 0; /* Z-Index auf eine niedrigere Ebene als der des Banners setzen */
+}
+
