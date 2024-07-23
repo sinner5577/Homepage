@@ -51,10 +51,32 @@ main {
     padding: 1rem;
     width: calc(33.333% - 2rem);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center; /* Center the text */
 }
 
 .project-card h3 {
     margin-top: 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.btn {
+    background-color: #333;
+    color: #FFFFFF;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: #333;
 }
 
 .contact-section form {
@@ -109,4 +131,3 @@ footer {
         margin: 0.5rem 0;
     }
 }
-
