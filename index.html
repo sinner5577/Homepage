@@ -1,32 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Countdown Website</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Meine Projekte</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1>Willkommen zu meinen Projekten</h1>
+        <nav>
+            <ul>
+                <li><a href="#projekte">Projekte</a></li>
+                <li><a href="#über-mich">Über mich</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h1>Countdowns</h1>
-    <div class="countdown-container">
-        <h2>Tage bis zu den Sommerferien</h2>
-        <div id="countdown1" class="countdown"></div>
-    </div>
+    <main>
+        <section id="projekte" class="projects-section">
+            <h2>Meine Projekte</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Projekt 1</h3>
+                    <p>Beschreibung des ersten Projekts.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Projekt 2</h3>
+                    <p>Beschreibung des zweiten Projekts.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Projekt 3</h3>
+                    <p>Beschreibung des dritten Projekts.</p>
+                </div>
+            </div>
+        </section>
 
-    <div class="countdown-container">
-        <h2>Schultage bis zu den Sommerferien</h2>
-        <div id="countdown2" class="countdown"></div>
-    </div>
+        <section id="über-mich" class="about-section">
+            <h2>Über mich</h2>
+            <p>Hier ist eine kurze Beschreibung über mich.</p>
+        </section>
 
-    <button class="button" id="abstimmungButton">Zum Formular</button>
+        <section id="kontakt" class="contact-section">
+            <h2>Kontakt</h2>
+            <form action="send_mail.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-    <script src="script.js"></script>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Nachricht:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Senden</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Meine Projekte. Alle Rechte vorbehalten.</p>
+    </footer>
 </body>
 </html>
-
-
-
-
-
-

@@ -1,135 +1,112 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0; /* Hintergrundfarbe geändert */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #121212;
+    color: #FFFFFF;
+}
+
+header {
+    background-color: #1F1F1F;
+    color: #FFFFFF;
+    padding: 1rem;
     text-align: center;
-    margin: 20px; /* Weniger Margin für bessere Nutzung des Bildschirms */
 }
 
-h1 {
-    color: #333;
+header nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-.countdown-container {
-    margin-bottom: 20px;
+header nav ul li {
+    display: inline;
+    margin: 0 1rem;
 }
 
-.countdown {
-    font-size: 36px; /* Kleinere Schriftgröße für Mobilgeräte */
-    margin: 20px 0;
-    padding: 10px;
-    background-color: #fff;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.button {
-    padding: 12px 24px; /* Größere Polsterung */
-    font-size: 16px;
-    background-color: #333; /* Hintergrundfarbe des Buttons geändert */
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+header nav ul li a {
+    color: #FFFFFF;
     text-decoration: none;
-    transition: background-color 0.3s;
+    font-weight: bold;
 }
 
-.button:hover {
-    background-color: #333;
+main {
+    padding: 2rem;
 }
 
-/* Media Query für größere Bildschirme */
-@media (min-width: 768px) {
-    body {
-        margin: 50px; /* Mehr Margin für größere Bildschirme */
+.projects-section, .about-section, .contact-section {
+    margin-bottom: 2rem;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.project-card {
+    background-color: #1F1F1F;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 1rem;
+    width: calc(33.333% - 2rem);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-section form label {
+    font-weight: bold;
+}
+
+.contact-section form input, .contact-section form textarea {
+    padding: 0.5rem;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #1F1F1F;
+    color: #FFFFFF;
+}
+
+.contact-section form button {
+    background-color: #1F1F1F;
+    color: #FFFFFF;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+footer {
+    background-color: #1F1F1F;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1rem;
+    position: relative; /* Position changed from fixed to relative */
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .projects {
+        flex-direction: column;
     }
 
-    .countdown {
-        font-size: 48px; /* Größere Schriftgröße für größere Bildschirme */
+    .project-card {
+        width: 100%;
     }
-}
 
-/* Banner-Stile */
-#banner {
-    background-color: #333; /* Hintergrundfarbe des Banners geändert */
-    color: #fff;
-    padding: 20px;
-    margin: 0; /* Kein äußerer Abstand */
-    border-radius: 0px;
-    position: absolute; /* Position auf absolut setzen */
-    left: 0; /* Position von ganz links */
-    right: 0; /* Position von ganz rechts */
-    top: 0; /* Position von ganz oben */
-    z-index: 2; /* Z-Index auf eine höhere Ebene als der des Iframes setzen */
-}
-
-#banner p {
-    margin-bottom: 10px;
-}
-
-
-
-
-/* Formular-Stile */
-#confirmInput {
-    margin-top: 10px;
-}
-
-/* Select-Stile */
-select {
-    padding: 12px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    appearance: none;
-    background-color: #fff; /* Hintergrundfarbe des Select-Felds geändert */
-    background-image: url('data:image/svg+xml;utf8,<svg fill="%23ccc" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M7 10l5 5 5-5z"/></svg>');
-    background-repeat: no-repeat;
-    background-position: right 10px center;
-    background-size: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-select:hover {
-    border-color: #999;
-}
-
-/* Button-Stile */
-#confirmButton {
-    padding: 12px 24px; /* Größere Polsterung */
-    font-size: 16px;
-    background-color: #333; /* Hintergrundfarbe des Buttons geändert */
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background-color 0.3s;
-    position: relative; /* Position auf relativ setzen */
-    z-index: 2; /* Z-Index auf eine höhere Ebene als der des Iframes setzen */
-}
-
-#confirmButton:hover {
-    background-color: #555; /* Hintergrundfarbe des Buttons im Hover-Zustand geändert */
-}
-
-#formContainer {
-    margin-top: 200px; /* Beispielwert für den oberen Abstand */
-    text-align: center;
-    position: relative; /* Position auf relativ setzen */
-    height: 100%;
-
-   
-}
-
-iframe {
-    width: 100%;
-    border: none;
-    position: relative; /* Position auf relativ setzen */
-    z-index: 0; /* Z-Index auf eine niedrigere Ebene als der des Banners setzen */
+    header nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
 }
 
