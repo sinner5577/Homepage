@@ -4,25 +4,184 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mehrere IFrames</title>
-    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://www.basketball-bund.net/rest/widget/widgetjs"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f5;
+        }
 
+        h1 {
+            text-align: center;
+            color: #333;
+            margin: 20px 0;
+        }
+
+        .iframe-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .iframe-wrapper {
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            min-width: 500px; /* Mindestbreite für die iFrames */
+        }
+
+        .iframe-wrapper h2 {
+            background-color: #0262F3;
+            color: #fff;
+            padding: 10px;
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
     <h1>Meine eingebetteten Inhalte</h1>
     <div class="iframe-container">
-        <div class="iframe-wrapper">
-            <div class="iframe-title">IFrame 1</div>
-            <iframe src="https://example.com"></iframe>
+        <div id="widget_1735418494274" class="iframe-wrapper">
+            <h2>Widget 1</h2>
         </div>
-        <div class="iframe-wrapper">
-            <div class="iframe-title">IFrame 2</div>
-            <iframe src="https://example.com"></iframe>
+        <div id="widget_1735419040042" class="iframe-wrapper">
+            <h2>Widget 2</h2>
         </div>
-        <div class="iframe-wrapper">
-            <div class="iframe-title">IFrame 3</div>
-            <iframe src="https://example.com"></iframe>
+        <div id="widget_1735419128509" class="iframe-wrapper">
+            <h2>Widget 3</h2>
+        </div>
+        <div id="widget_1735419207342" class="iframe-wrapper">
+            <h2>Widget 4</h2>
         </div>
     </div>
+
+    <script>
+        // Wartet, bis das Widget-Skript geladen ist
+        window.addEventListener("load", function () {
+            // Initialisierung der Widgets
+            widget.ligawidget('widget_1735418494274', {
+                iframeWidth: 500,
+                iframeHeight: 600,
+                showRefreshButton: true,
+                titleColor: "FFFFFF",
+                titleBgColor: "0262F3",
+                tapColor: "FFFFFF",
+                tapBgColor: "333333",
+                colorMatchGroup: "666666",
+                bgColorMatchGroup: "F0F0F0",
+                colorMatchListItem: "000000",
+                bgColorMatchListItem: "FFFFFF",
+                showKuerzelInSpiele: false,
+                ligaNr: "71412",
+                vereinsId: "2836",
+                rangeDays: 8,
+                activeTap: "aktuell",
+                tapColorActive: "FFFFFF",
+                tapBgColorActive: "000000",
+                tapBorderColorActive: "0262F3",
+                colorTableHeader: "666666",
+                bgColorTableHeader: "F0F0F0",
+                colorTableListItem: "000000",
+                bgColorTableListItem: "FFFFFF",
+                colorTableListItem2: "000000",
+                bgColorTableListItem2: "FFFFFF",
+                showKuerzelInTabelle: false
+            });
+
+            widget.ligawidget('widget_1735419040042', {
+                iframeWidth: 500,
+                iframeHeight: 600,
+                showRefreshButton: true,
+                titleColor: "FFFFFF",
+                titleBgColor: "0262F3",
+                tapColor: "FFFFFF",
+                tapBgColor: "333333",
+                colorMatchGroup: "666666",
+                bgColorMatchGroup: "F0F0F0",
+                colorMatchListItem: "000000",
+                bgColorMatchListItem: "FFFFFF",
+                showKuerzelInSpiele: false,
+                ligaNr: "71413",
+                vereinsId: "2836",
+                rangeDays: 8,
+                activeTap: "aktuell",
+                tapColorActive: "FFFFFF",
+                tapBgColorActive: "000000",
+                tapBorderColorActive: "0262F3",
+                colorTableHeader: "666666",
+                bgColorTableHeader: "F0F0F0",
+                colorTableListItem: "000000",
+                bgColorTableListItem: "FFFFFF",
+                colorTableListItem2: "000000",
+                colorTableListItem2: "FFFFFF",
+                showKuerzelInTabelle: false
+            });
+
+            widget.ligawidget('widget_1735419128509', {
+                iframeWidth: 500,
+                iframeHeight: 700,
+                showRefreshButton: true,
+                titleColor: "FFFFFF",
+                titleBgColor: "0262F3",
+                tapColor: "FFFFFF",
+                tapBgColor: "333333",
+                colorMatchGroup: "666666",
+                bgColorMatchGroup: "F0F0F0",
+                colorMatchListItem: "000000",
+                bgColorMatchListItem: "FFFFFF",
+                showKuerzelInSpiele: false,
+                ligaNr: "71812",
+                vereinsId: "790",
+                rangeDays: 8,
+                activeTap: "aktuell",
+                tapColorActive: "FFFFFF",
+                tapBgColorActive: "000000",
+                tapBorderColorActive: "0262F3",
+                colorTableHeader: "666666",
+                bgColorTableHeader: "F0F0F0",
+                colorTableListItem: "000000",
+                bgColorTableListItem: "FFFFFF",
+                colorTableListItem2: "000000",
+                colorTableListItem2: "FFFFFF",
+                showKuerzelInTabelle: false
+            });
+
+            widget.ligawidget('widget_1735419207342', {
+                iframeWidth: 500,
+                iframeHeight: 700,
+                showRefreshButton: true,
+                titleColor: "FFFFFF",
+                titleBgColor: "0262F3",
+                tapColor: "FFFFFF",
+                tapBgColor: "333333",
+                colorMatchGroup: "666666",
+                bgColorMatchGroup: "F0F0F0",
+                colorMatchListItem: "000000",
+                bgColorMatchListItem: "FFFFFF",
+                showKuerzelInSpiele: false,
+                ligaNr: "7130",
+                vereinsId: "790",
+                rangeDays: 8,
+                activeTap: "aktuell",
+                tapColorActive: "FFFFFF",
+                tapBgColorActive: "000000",
+                tapBorderColorActive: "0262F3",
+                colorTableHeader: "666666",
+                bgColorTableHeader: "F0F0F0",
+                colorTableListItem: "000000",
+                bgColorTableListItem: "FFFFFF",
+                colorTableListItem2: "000000",
+                colorTableListItem2: "FFFFFF",
+                showKuerzelInTabelle: false
+            });
+        });
+    </script>
 </body>
 </html>
-
